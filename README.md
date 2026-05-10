@@ -26,22 +26,14 @@ These skills require the **Stitch MCP** server to be configured and running in y
 
 Core design workflows for creating, managing, and optimizing designs within Stitch.
 
-| Skill | Description |
-|---|---|
-| [code-to-design](plugins/stitch-design/skills/code-to-design/) | Convert frontend code (React, Vue, etc.) to a Stitch Design via HTML extraction + design system + upload |
-| [generate-design](plugins/stitch-design/skills/generate-design/) | Generate new screens from text or images, edit existing screens, and create design variants |
-| [manage-design-system](plugins/stitch-design/skills/manage-design-system/) | Manage design systems in Stitch — upload DESIGN.md and apply themes to screens |
-| [extract-design-md](plugins/stitch-design/skills/extract-design-md/) | Extract a comprehensive DESIGN.md directly from frontend source code |
-| [extract-static-html](plugins/stitch-design/skills/extract-static-html/) | Extract self-contained static HTML from running web apps, inlining CSS and images |
-| [upload-to-stitch](plugins/stitch-design/skills/upload-to-stitch/) | Upload local assets (images, mockups, HTML) to a Stitch project |
-
-**Prompt examples:**
-
-> *"Upload the frontend code at `/path/to/dashboard` into a Stitch project named 'Dashboard-Migration-2026'."*
-
-> *"Make a browse tab for a mobile app for romance and date night ideas."*
-
-> *"Extract a high-fidelity static HTML snapshot of our local dev page running on `http://localhost:3000/profile`."*
+| Skill | Description | Prompt Example |
+|---|---|---|
+| [code-to-design](plugins/stitch-design/skills/code-to-design/) | Convert frontend code (React, Vue, etc.) to a Stitch Design via HTML extraction + design system + upload | *"Upload the frontend code at `/path/to/dashboard` into a Stitch project named 'Dashboard-Migration-2026'."* |
+| [generate-design](plugins/stitch-design/skills/generate-design/) | Generate new screens from text or images, edit existing screens, and create design variants | · *"Make a browse tab for a mobile app for romance and date night ideas."*<br>· *"Edit the login screen to add a 'Remember Me' checkbox and change the button color to blue."*<br>· *"Generate 3 design variants of the home screen with dark mode and high-density layouts."* |
+| [manage-design-system](plugins/stitch-design/skills/manage-design-system/) | Manage design systems in Stitch — upload DESIGN.md and apply themes to screens | *"Upload our design system from `.stitch/DESIGN.md` and apply it to all screens."* |
+| [extract-design-md](plugins/stitch-design/skills/extract-design-md/) | Extract a comprehensive DESIGN.md directly from frontend source code | *"Scan `/src` and extract the design system into `.stitch/DESIGN.md`."* |
+| [extract-static-html](plugins/stitch-design/skills/extract-static-html/) | Extract self-contained static HTML from running web apps, inlining CSS and images | *"Extract a static HTML snapshot of `http://localhost:3000/profile`."* |
+| [upload-to-stitch](plugins/stitch-design/skills/upload-to-stitch/) | Upload local assets (images, mockups, HTML) to a Stitch project | *"Upload `.stitch/landing_page.html` to Stitch project `projects/987654321`."* |
 
 ---
 
@@ -49,11 +41,11 @@ Core design workflows for creating, managing, and optimizing designs within Stit
 
 Code generation, framework integration, and asset compilation from Stitch designs.
 
-| Skill | Description |
-|---|---|
-| [react-components](plugins/stitch-build/skills/react-components/) | Convert Stitch screens to React component systems with automated validation and design token consistency |
-| [remotion](plugins/stitch-build/skills/remotion/) | Generate walkthrough videos from Stitch projects using Remotion with smooth transitions and zooming |
-| [shadcn-ui](plugins/stitch-build/skills/shadcn-ui/) | Expert guidance for integrating and building applications with shadcn/ui components |
+| Skill | Description | Prompt Example |
+|---|---|---|
+| [react-components](plugins/stitch-build/skills/react-components/) | Convert Stitch screens to React component systems with automated validation and design token consistency | *"Convert all screens in Stitch project `projects/123` to React components."* |
+| [remotion](plugins/stitch-build/skills/remotion/) | Generate walkthrough videos from Stitch projects using Remotion with smooth transitions and zooming | *"Generate a walkthrough video of the Stitch project `projects/456`."* |
+| [shadcn-ui](plugins/stitch-build/skills/shadcn-ui/) | Expert guidance for integrating and building applications with shadcn/ui components | *"Set up shadcn/ui and build a data table with sorting and filtering."* |
 
 ---
 
@@ -61,12 +53,12 @@ Code generation, framework integration, and asset compilation from Stitch design
 
 Supporting tools for enhancing prompts, generating design specs, and enforcing design standards.
 
-| Skill | Description |
-|---|---|
-| [design-md](plugins/stitch-utilities/skills/design-md/) | Analyze Stitch projects and generate comprehensive DESIGN.md files in semantic language |
-| [enhance-prompt](plugins/stitch-utilities/skills/enhance-prompt/) | Transform vague UI ideas into polished, Stitch-optimized prompts with UI/UX keywords |
-| [stitch-loop](plugins/stitch-utilities/skills/stitch-loop/) | Generate complete multi-page websites from a single prompt with automated validation |
-| [taste-design](plugins/stitch-utilities/skills/taste-design/) | Generate DESIGN.md files enforcing premium, anti-generic UI standards |
+| Skill | Description | Prompt Example |
+|---|---|---|
+| [design-md](plugins/stitch-utilities/skills/design-md/) | Analyze Stitch projects and generate comprehensive DESIGN.md files in semantic language | *"Analyze Stitch project `projects/123` and generate a DESIGN.md."* |
+| [enhance-prompt](plugins/stitch-utilities/skills/enhance-prompt/) | Transform vague UI ideas into polished, Stitch-optimized prompts with UI/UX keywords | *"Enhance this prompt: 'make a settings page'."* |
+| [stitch-loop](plugins/stitch-utilities/skills/stitch-loop/) | Generate complete multi-page websites from a single prompt with automated validation | *"Build a 5-page portfolio website with Stitch."* |
+| [taste-design](plugins/stitch-utilities/skills/taste-design/) | Generate DESIGN.md files enforcing premium, anti-generic UI standards | *"Generate a premium DESIGN.md with strict typography and calibrated colors."* |
 
 ## Repository Structure
 
