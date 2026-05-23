@@ -19,7 +19,9 @@ This project follows [Google's Open Source Community Guidelines](https://opensou
 ## Contribution process
 
 1.  Fork the repository
-2.  Create a feature branch
+2.  Create a feature branch (e.g. `feat/my-new-skill` or `fix/bug-description`)
 3.  Commit your changes
 4.  Push to the branch
 5.  Create a new Pull Request
+
+> **Personal note:** When working on this locally, I run `npm test` before pushing to catch any issues early. Also worth checking that any new skill follows the existing file/naming conventions in `src/skills/`.
